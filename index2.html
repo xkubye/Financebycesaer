@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>History</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- ICON -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <span class="material-icons" onclick="back()">arrow_back</span>
+    <h2>Aktivitas</h2>
+    <span class="material-icons" onclick="downloadPDF()">download</span>
+  </div>
+
+  <!-- SEARCH -->
+  <div class="search">
+    <span class="material-icons">search</span>
+    <input type="text" id="searchInput" placeholder="Cari transaksi...">
+  </div>
+
+  <!-- FILTER -->
+  <div class="filter">
+    <button onclick="setFilter('all')">Semua</button>
+    <button onclick="setFilter('month')">Bulan Ini</button>
+    <button onclick="setFilter('week')">Minggu Ini</button>
+  </div>
+
+  <!-- LIST -->
+  <div id="list"></div>
+
+  <script src="script2.js"></script>
+  <script src="theme.js"></script>
+</body>
+</html>

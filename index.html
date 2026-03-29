@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Finance App</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- ICON -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="profile">
+      <label for="upload">
+        <img id="profileImg" src="unknown.jpg">
+      </label>
+      <input type="file" id="upload" hidden>
+
+      <div>
+        <p>Welcome Back</p>
+        <h2 id="username" onclick="editName()">ur name?</h2>
+      </div>
+    </div>
+
+    <span class="material-icons notif">notifications</span>
+  </div>
+
+  <!-- BALANCE -->
+  <div class="card">
+    <p>Total Balance</p>
+    <h1 id="saldo">Rp 0</h1>
+
+    <div class="row">
+      <div>
+        <p>Income</p>
+        <b id="income">0</b>
+      </div>
+      <div>
+        <p>Expense</p>
+        <b id="expense">0</b>
+      </div>
+    </div>
+  </div>
+
+  <!-- FORM -->
+  <div class="card">
+    <h2>Add Transaction</h2>
+
+    <input id="label" placeholder="Description">
+    <input id="amount" type="number" placeholder="Amount">
+
+    <select id="type">
+      <option value="income">Income (+)</option>
+      <option value="expense">Expense (-)</option>
+    </select>
+
+    <button onclick="addTransaction()">Save</button>
+  </div>
+
+  <!-- HISTORY -->
+  <div class="card">
+    <h2>History</h2>
+    <button class="danger" onclick="resetData()">Reset Data</button>
+    <ul id="history"></ul>
+  </div>
+
+  <!-- NAV -->
+<div class="nav">
+  <a href="index.html"><span class="material-icons">home</span></a>
+  <a href="index2.html"><span class="material-icons">bar_chart</span></a>
+  <a href="index3.html"><span class="material-icons">download</span></a>
+  <a href="index4.html"><span class="material-icons">settings</span></a>
+</div>
+
+  <script src="script.js"></script>
+  <script src="theme.js"></script>
+</body>
+</html>

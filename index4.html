@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Settings</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- ICON -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <span class="material-icons" onclick="back()">arrow_back</span>
+    <h2>Settings</h2>
+    <div></div>
+  </div>
+
+  <!-- MENU -->
+  <div class="card">
+
+    <div class="item" onclick="showAboutApp()">
+      <span class="material-icons">info</span>
+      <p>About This App</p>
+      <span class="material-icons">chevron_right</span>
+    </div>
+
+    <div class="item" onclick="showDeveloper()">
+      <span class="material-icons">person</span>
+      <p>About Developer</p>
+      <span class="material-icons">chevron_right</span>
+    </div>
+
+    <div class="item" onclick="toggleDarkMode()">
+      <span class="material-icons">dark_mode</span>
+      <p>Dark Mode</p>
+      <span class="material-icons">toggle_on</span>
+    </div>
+
+    <div class="item" onclick="setTheme('blue1')">
+      <span class="material-icons">palette</span>
+      <p>Blue Calm 1</p>
+    </div>
+
+    <div class="item" onclick="setTheme('blue2')">
+      <span class="material-icons">palette</span>
+      <p>Blue Calm 2</p>
+    </div>
+
+    <div class="item danger" onclick="resetSettings()">
+      <span class="material-icons">restart_alt</span>
+      <p>Reset Settings</p>
+    </div>
+
+  </div>
+
+  <!-- POPUP -->
+  <div id="popup" class="popup hidden"></div>
+
+  <script src="script4.js"></script>
+  <script src="theme.js"></script>
+</body>
+</html>

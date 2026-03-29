@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Download</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- ICON -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- jsPDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <span class="material-icons" onclick="back()">arrow_back</span>
+    <h2>Download</h2>
+    <span class="material-icons" onclick="downloadPDF()">download</span>
+  </div>
+
+  <!-- LIST -->
+  <div class="card">
+    <div id="list"></div>
+  </div>
+
+  <!-- BUTTON -->
+  <button class="download-btn" onclick="downloadPDF()">Download PDF</button>
+
+  <script src="script3.js"></script>
+  <script src="theme.js"></script>
+</body>
+</html>
